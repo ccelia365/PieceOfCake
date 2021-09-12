@@ -1,0 +1,23 @@
+.welcome-message {
+    padding-top: 80px;
+    text-align: center;
+  }
+  
+  .welcome-message h1 {
+    font-size: 65px;
+    font-weight: bold;
+  }
+
+  .first-row {
+    padding-top: 120px;
+  }
+
+  .description {
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  
+  .description h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }

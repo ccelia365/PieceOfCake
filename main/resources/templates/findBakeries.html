@@ -1,12 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakeries</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../static/images/favicon_io/favicon.ico">
+
+    <title>Location</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="../static/public/css/home.css" rel="stylesheet">
+    <link href="../static/css/findBakeries.css" rel="stylesheet">
 </head>
-<body>
-    
+
+<body style="background: rgb(242, 225, 216);">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F2AD85;">
+        <a class="navbar-brand" href="#">Piece of Cake</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates/findBakeries.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates/savedItems.html">Saved Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates/profile.html">Profile</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="header-div">
+                    <div class="greeting-div">
+                        <span class="nav-link">Hello, </span>
+                        <span class="nav-link" style="text-transform: capitalize">
+                            Guest</span>
+                    </div>
+
+                    <form action="/logout" method="post">
+                        <input type="submit" id="logout-btn" class="btn btn-default btn-sm" value="LOG OUT" style="background-color: #A65B61; color: white;" />
+                    </form>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Code for Find Bakeries -->
+    <section class="welcome-message">
+        <h1>Find New Bakeries Near You!</h1>
+        <img src="../static/images/bakery.png" style="width: 1000px;height: 351.5px;">
+    </section>
+
+    <section class="first-row">
+        <div class="row" style="background: #F2AD85;">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#" class="">
+                        <img src="../static/images/sweets1.png" style="width: 300px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets2.png" style="width: 300px;">
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets1.png" style="width: 300px;">
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets2.png" style="width: 300px;">
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <h1>Julie's Bakery</h1>
+        <img src="../static/images/stars.png" style="width: 150px;">
+        <p>Boston, MA</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <section class="first-row">
+        <div class="row" style="background: #F2AD85;">
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <a href="#" class="">
+                        <img src="../static/images/sweets1.png" style="width: 300px;">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets2.png" style="width: 300px;">
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets1.png" style="width: 300px;">
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/sweets2.png" style="width: 300px;">
+            </div>
+        </div>
+    </section>
+
+    <section class="description">
+        <h1>Lemontree House</h1>
+        <img src="../static/images/stars.png" style="width: 150px;">
+        <p>Boston, MA</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
 </body>
 </html>
